@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Celso U. Ancao Jr.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom right, #e0ccff, #fce4ec);
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      padding: 1rem 0;
+      background: transparent;
+      font-weight: bold;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #5a2d82;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #8e44ad;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #5a2d82;
+    }
+
+    header p {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .button {
+      padding: 0.8rem 1.5rem;
+      background-color: #8e44ad;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1rem;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .about img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .skills {
+      max-width: 500px;
+    }
+
+    .skills h2 {
+      color: #5a2d82;
+      margin-bottom: 1rem;
+    }
+
+    .skills ul {
+      list-style: square;
+      padding-left: 1.2rem;
+      color: #333;
+    }
+
+    .gallery {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      color: #5a2d82;
+      margin-bottom: 1rem;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    #contact {
+      background: #f9f1ff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    #contact h2 {
+      color: #5a2d82;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.7rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #8e44ad;
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ece2ff;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About Me</a>
+    <a href="#contact">Info</a>
+  </nav>
+
+  <header>
+    <h1>Celso U. Ancao Jr.</h1>
+    <p>Hi! I'm Celso, but most people call me Tong or Junjie. I'm 18 years old and passionate about expressing creativity through art and storytelling. I love making art, from digital illustrations to sketches, and I also enjoy writing stories—especially ones inspired by movies and manhwas. I'm a hardworking and dedicated person who always strives to improve and bring my ideas to life with passion and purpose.</p>
+    <a href="#gallery"><button class="button">See My Work</button></a>
+  </header>
+
+  <section class="about" id="about">
+    <img src="wapo.jpg.jpg" alt="Celso Photo" />
+    <div class="skills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>Digital Illustration</li>
+        <li>Traditional Drawing</li>
+        <li>Graphic Design</li>
+        <li>Coloring and Shading</li>
+        <li>Character Design</li>
+      </ul>
+    </div>
+  </section>
+
+<section class="gallery" id="gallery">
+    <h2>My Art Gallery</h2>
+    <img src="draw.jpg.jpg" alt="Art 1"/>
+    <img src="yin.jpg.jpg" alt="Art 2"/>
+    <img src="11draw.jpg.jpg" alt="Art 3"/>
+    <img src="graph.jpg.jpg" alt="Art 4"/>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Contact me:</p>
+    <p>Email: celsoancao5@gmail.com | Phone: 0965-844-2530</p>
+    <p>
+      <a href="https://www.facebook.com/share/1VKDumkPbU/" target="_blank" style="color:#4267B2;">Facebook</a> |
+      <a href="https://www.instagram.com/im__t.ng?igsh=MXBkaGkxdHpiMnp2aQ==" target="_blank" style="color:#C13584;">Instagram</a>
+    </p>
+  </footer>
+
+</body>
+</html> 
